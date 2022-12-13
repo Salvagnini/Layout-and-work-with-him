@@ -291,7 +291,7 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 35px;
+    padding: 16px 15px;
     gap: 10px;
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
     box-shadow: 0px 2px 10px #46B1DE;
