@@ -55,7 +55,7 @@ html{
             --sent-max-width: 992px;
             --card_box-max-height: 1995px;
             --footer_blok-gap: 20%;
-            --card_box-max-width: 400px;
+            --card_box-max-width: 900px;
         }
         .nav{
             padding: 0px 20px 0px 20px;
