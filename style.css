@@ -1,0 +1,662 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+/* шрифти */
+@font-face {
+    font-weight: 400;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-display: swap;
+    src: url("./src/шрифт/sofia_sans/web_fonts/SofiaSans[wdth\,wght].woff2") format("woff2");
+}
+
+html{
+   font-family: 'Roboto';
+}
+
+/* шрифн на мобільну версію */
+/* .center p{
+    font-family: 'Sofia Sans';
+} */
+
+
+:root{
+    /* змінні на планшет */
+    --sent-max-width: 1150px;
+    --card_box-max-height: 396px;
+    --footer_blok-gap: 35.5%;
+    --card_box-max-width:1020px;
+/* *************************************** */
+    /* зміни на тел */
+    --fon-max-width: 1080px;
+    --logo_zyb-widht: 77.57px;
+    --p-font-size:38px;
+    --nav_phone-font-size:16px;
+    --footer_margin-top: 91px;
+    --footer_blok-display: grid;
+    --logo_footer-p: 38,78px
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 2992px) {
+    .for-small-screens,
+    .for-small-screens_two,
+    .fon_tanya{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    }
+}
+
+/* медіа вираз на планшет */
+@media screen  and (max-width: 992px) and (min-width:481px) {
+    :root {
+            --sent-max-width: 992px;
+            --card_box-max-height: 1995px;
+            --footer_blok-gap: 20%;
+            --card_box-max-width: 400px;
+        }
+        .nav{
+            padding: 0px 20px 0px 20px;
+        }
+        .menu{
+            max-width: 211px;
+        }
+        .center{
+            padding: 0px 20px 0px 20px;
+        }
+        .buttons{
+            padding: 100px 20px 0px 20px;
+        }
+        .card{
+            padding: 0px 20px 0px 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 400px;
+        }
+        .images{
+            flex-direction: column;
+            width: 522px;
+            padding-top: 20px;  
+            height: 70vh;          
+        }
+        main{
+            margin-top: 500px;
+        }
+        
+}
+/* ********************************************* */
+
+
+/* версія телефон */
+@media screen and (max-width:480px)  {
+    :root{
+        --fon-max-width: 480px;
+        --logo_zyb-widht: 33.39px;
+        --p-font-size: 16,89px;
+        --nav_phone-font-size: 12px;
+        --footer_blok-gap: 3%;
+        --footer_margin-top: 0px;
+        --footer_blok-display: flex;
+        --logo_footer-p: 27px;
+    }
+
+    header{
+        margin-top: -50px;
+    }
+    .menu,
+    .language,
+    .card,
+     main,
+    .ikons_footer,
+    .buttons_Call,
+    .buttons_services,
+    .fon_nikola {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .logo_zyb{
+        width: 33px;
+    }
+    .nav_phone_number{
+        font-weight: 500px;
+        margin-right: 25px;
+        width: max-content;
+    }
+    .ledy{
+        width: 208px;
+        left: 104px;
+    }
+    .center{
+        font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 140%;
+        text-align: center;
+    }
+    .center p{
+        font-size: 22px;
+        display: flex;
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 130%;
+        margin-top: 111px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        margin-left: 119px;
+        margin-top: -40px;
+    }
+    .center > p + span{
+        font-size: 22px;
+        margin-top: -12px;
+        display: flex;
+        text-align: center;    
+    }
+    .center > p + span + p{
+        font-size: 12px;
+    }
+    .DENTAL_TREATMENT{
+        margin-top: 33px;
+        margin-left: 106px;
+    }
+    .logo_footer{
+        padding: 0px 162px 0px 20px;
+    }
+    .logo_footer p{
+        font-family: 'Sofia Sans';
+    }
+    .cont_footer h3{
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    .cont_footer p{
+        padding-left: 10px;
+    }
+    .time,
+    .menu_footer_3{
+        padding: 0px 108px 0px 11px;
+    }
+    .cont_footer_a{
+        padding-left: 20px;
+    }
+   .buttons_Call,
+   .for-small-screens,
+   .buttons_services,
+   .for-small-screens_two{
+    margin-top: -31px;
+    margin-right: 10px;
+    margin-left: 20px;
+   }
+    .img_footer{
+        padding-right: 10px;
+    }
+    #copyrigt{
+        text-align: end;
+        padding-left: 200px;
+    }
+}
+
+
+
+/* ***********DESKTOP************************************ */
+header{
+    background-image: url('./src/logo/Rectangle\ 1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 683px;
+    /* height: var(--header-height); */
+    padding-top: 60px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #1B1D1F;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 55px 210px 0px 110px; */
+    align-items: center;
+    height: 91px;
+}
+.logo {
+    display: flex;
+    color: #46B1DE;
+    width: 425.22px;
+    height: 91px;
+    align-items: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.logo_zyb{
+    height: 80.56px;
+    /* width: 77.57px; */
+    width: var(--logo_zyb-widht);
+    
+}
+.nav_phone{
+    display: flex;
+    /* font-size: 16px; */
+    font-size: var(--nav_phone-font-size);
+    align-items: center;
+}
+p{
+    margin-left: 5px;
+    /* font-size: 38px; */
+    font-size: var(--p-font-size);
+}
+.menu{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.language{
+    padding-left: 20px;
+}
+.center > p + span{
+    color: #46B1DE;
+}
+.center{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    /* padding: 55px 0px 0px 33px; */
+    /* margin: 180px; */
+    margin: 55px 0px 0px 0px;
+}
+.center > p + span + p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* padding: 30px 0px 0px 0px; */
+    margin: 30px 0px 0px 0px;
+}
+.buttons{
+    display: flex;
+    position: relative;
+    margin: 59px 0;
+    
+    /* max-width: max-content; */
+}
+.buttons_Call,
+.for-small-screens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 35px;
+    gap: 10px;
+    background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
+    box-shadow: 0px 2px 10px #46B1DE;
+    border-radius: 8px;
+    color: white;
+}
+.buttons_services,
+.for-small-screens_two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 35px;
+    gap: 10px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #DDE0DC;
+    box-shadow: 0px 2px 10px #DDE0DC;
+    border-radius: 8px;
+    margin-left: 120px;
+    color: #46B1DE;
+}
+.ledy{
+    position: absolute;
+    z-index: 1;
+    bottom: 62px;
+    right: 0px;
+}
+.card{
+    position: relative;
+    max-width: 980px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.card_3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+    padding-left: 22px;
+    width: 280px;
+    height: 120px;
+    background: #FFFFFF;
+    border: 1px solid #D8E1E1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.card_color{
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    align-items: center;
+    text-align: center;
+    color: #46B1DE;
+}
+.fon{
+    position: relative;
+    /* max-width: 1180px; */
+    max-width: var(--fon-max-width);
+    height: 683px;
+    margin: 0 auto;
+}
+.sent{
+    max-width: var(--sent-max-width);
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-top: 139px;
+    /* flex-wrap: wrap;
+    display: flex; */
+}
+.why_you h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 130%;
+    text-align: center;
+}
+.why_you span{
+    color: #46B1DE;
+}
+.why_you p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    margin: 5px auto;
+    max-width: 700px;
+    width: 612px;
+    height: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card_box{
+    background: #A1C7D4;
+    border-radius: 12px;
+    /* max-width: 1020px; */
+    max-width: var(--card_box-max-width);
+    max-height: 396px;
+    max-height: var(--card_box-max-height);
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card_six{
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 300px;
+    height: 176px;
+    margin: 15px 20px;
+    /* margin: 0px 20px 0px 20px; */
+    padding: 16px;
+    /* padding: 0px 20px 0px 20px; */
+}
+.card_six_one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+        
+.card_six_one > span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #46B1DE;
+    padding-right: 5px;
+}
+.card_six_one > span + span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #46B1DE;
+}
+.card_six_one_text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.form{
+    width: 821px;
+    height: 247px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    margin: 10px 9px 8px 15px;
+}
+.main_form{
+    max-width: 845px;
+    height: 265px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 90px auto;
+}
+.form h2{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1B1D1F;
+    margin-top: 29px;
+}
+.form p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    margin: 7px auto 44px;
+}
+
+.form_botton{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    border: none;
+}
+#names{
+    width: 233px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    background-image: url(./src/logo/user\ 4.jpg);
+    background-repeat: no-repeat;
+    background-position: 5px 15px;
+    border-radius: 8px
+}
+#names:focus{
+    background-image: none;
+}
+#number{
+    width: 233px;
+    height: 57px;
+    background: rgba(217, 217, 217, 0.71);
+    background-image: url(./src/logo/-phone-in-talk_90490\ 4.jpg);
+    background-repeat: no-repeat;
+    background-position: 5px 15px;
+    border-radius: 8px;
+}
+#number:focus {
+    background-image: none;
+}
+#sign{
+    width: 180px;
+    height: 57px;
+    background: #46B1DE;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.images{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1150px;
+    padding-top: 20px;
+    margin: 0 auto;
+    padding: 0px 60px 0px 70px;
+}
+footer{
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+    /* margin-top: 91px; */
+    margin-top: var(--footer_margin-top);
+    padding: 65px 0 11px;
+}
+.footer_blok{
+    max-width: 1180px;
+    margin: 0 auto;
+    /* display: grid; */
+    display: var(--footer_blok-display);
+    grid-template: 1fr / 440px 380px;
+    /* gap: 35.5%; */
+    gap: var(--footer_blok-gap);
+    flex-wrap: wrap;
+    min-height: 360px;
+}
+.tesla_footer{
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+    color: #0F2D4A;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+.logo_footer img{
+    width: 77.57px;
+    height: 80.56px;
+}
+.logo_footer p{
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 38.7869px; */
+    font-size: var(--logo_footer-p);
+    line-height: 140%;
+}
+.menu_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu_footer_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+.nav-nav{
+    color: #0f2d4a;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 60%;
+}
+.time p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+.time span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+}
+.cont_footer{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.cont_footer h3{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 5%;
+}
+.cont_footer p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.cont_footer_a{
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    margin-bottom: 18px;
+}
+.img_footer{
+    height: 28px;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+.ikons_footer{
+    margin-bottom: 18px;
+}
+#copyrigt{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    align-self: center;
+    margin: 0;
+}
+.footer_img_contact{
+    height: 28px;
+    margin: 0 4px;
+    vertical-align: middle;
+}
