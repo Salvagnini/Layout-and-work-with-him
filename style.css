@@ -283,7 +283,7 @@ p{
     position: relative;
     margin: 59px 0;
     
-    /* max-width: max-content; */
+    max-width: max-content;
 }
 .buttons_Call,
 .for-small-screens {
@@ -291,7 +291,7 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 15px;
+    padding: 16px 45px;
     gap: 10px;
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
     box-shadow: 0px 2px 10px #46B1DE;
@@ -303,6 +303,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 16px 35px;
     gap: 10px;
@@ -311,7 +312,7 @@ p{
     border: 1px solid #DDE0DC;
     box-shadow: 0px 2px 10px #DDE0DC;
     border-radius: 8px;
-    /* margin-left: 120px; */
+    margin-left: 120px;
     color: #46B1DE;
 }
 .ledy{
